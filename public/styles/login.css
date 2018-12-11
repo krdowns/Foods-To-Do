@@ -1,0 +1,161 @@
+.nav-wrapper {
+    background-color: #BC0402;
+}
+
+ul a {
+    font-family: 'PT Serif', serif;
+}
+
+.brand-logo {
+    margin-left: 2%;
+}
+
+body {
+    background-image: url('/images/homebg.jpg');
+    background-size: cover;
+    background-color: rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row-reverse;
+    padding: 10px 0;
+    position: relative;
+    -webkit-animation: mymove 2s infinite; 
+    animation: mymove 2s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 50px;}
+    to {right: 50px;}
+}
+
+@keyframes mymove {
+    from {left: 50px;}
+    to {right: 50px;}
+}
+
+.ball {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#number {
+    text-align: center;
+}
+
+@media all and (max-width: 399px) {
+    header {
+        align-items: center;  
+      }
+    }
+/*header with balls ends here*/
+.container {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foods-to-do {
+    height: 50px;
+    margin-bottom: 100px;
+    font-family: caslon;
+    color: lightcyan;
+}
+
+.shake:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: 4;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .buttons {
+    display: flex;
+}
+
+.signin-button:hover, 
+.profile-button:hover, 
+.signout-button:hover {
+    background-color: yellow;
+}
+
+.g-signin2 {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px yellow solid;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.profile-button {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px green solid;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+}
+
+.signout-button {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px red solid;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+}
+
+.intro {
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+    text-align: justify;
+    font-size: 1.5em;
+    color: yellow;
+}
+
+.intro:hover {
+    color: lightskyblue;
+}
+
+.go-to-profile {
+    width: 300px;
+    height: 50px;
+}
+
+@media all and (max-width: 400px) {
+     .buttons { 
+         flex-direction: column; 
+        } 
+    }
